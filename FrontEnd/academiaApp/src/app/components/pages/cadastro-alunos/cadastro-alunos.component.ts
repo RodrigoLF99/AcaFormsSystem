@@ -10,7 +10,7 @@ export class CadastroAlunosComponent implements OnInit {
   alunoForm: FormGroup = new FormGroup({}); // Inicialize o FormGroup vazio
   dadosDoAluno: any; // Propriedade para armazenar os dados dos alunos
   constructor(private fb: FormBuilder) {
-    }
+    } 
 
 
 ngOnInit(){

@@ -1,7 +1,7 @@
 <h3>Cadastro de Funcionários</h3>
 <p>Preencha os campos para incluir um aluno</p>
 <hr>
-<form >
+<form [formGroup]="funcionarioForm" (ngSubmit)="onSubmit()">
   <div class="row mb-2">
     <div class="col-md-4">
       <label>Nome do Funcionário:</label>
@@ -17,13 +17,13 @@
 
     <div class="col-md-2">
       <label>CPF:</label>
-      <input type="text" class="form-control" placeholder="Digite o CPF aqui." formControlName="cpf">
+      <input type="text" class="form-control" placeholder="Digite o cpf aqui." formControlName="cpf">
     </div>
 
 
     <div class="col-md-4">
       <label>E-mail:</label>
-      <input type="text" class="form-control" placeholder="Digite o E-mail aqui." formControlName="email">
+      <input type="text" class="form-control" placeholder="Digite o e-mail aqui." formControlName="email">
     </div>
 
 
@@ -32,20 +32,22 @@
         <label>Observações:</label>
         <textarea class="form-control" placeholder="Digite as Observações aqui." formControlName="observacoes"></textarea>
       </div>
-      <div class="row mb-2">
-        <div class="col-md-12">
-          <input type="submit" class="btn btn-success" value="Realizar Cadastro">
-          <a class="btn btn-secondary ms-2">Ir para a consulta</a>
-        </div>
-      </div>
-
-
     </div>
 
 
-
-
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <input type="submit" class="btn btn-success" value="Realizar Cadastro">
+        <a [routerLink]="['/pages/consulta-funcionario']" class="btn btn-secondary ms-2">Ir para a consulta</a>
+      </div>
+    </div>
   </div>
-
-
 </form>
+<div *ngIf="dadosDoFuncionario" >
+  <h3>Dados do funcionário cadastrado</h3>
+  <p><strong>Nome:</strong> {{ dadosDoFuncionario.nome }} </p>
+  <p><strong>Idade:</strong> {{ dadosDoFuncionario.idade }} </p>
+  <p><strong>CPF:</strong> {{ dadosDoFuncionario.cpf }} </p>
+  <p><strong>E-mail:</strong> {{ dadosDoFuncionario.email }} </p>
+  <p><strong>Observações</strong>: {{dadosDoFuncionario.observacoes }} </p>
+</div>
