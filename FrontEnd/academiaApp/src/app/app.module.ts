@@ -12,6 +12,9 @@ import { CadastroFuncionarioComponent } from './components/pages/cadastro-funcio
 import { ConsultaFuncionariosComponent } from './components/pages/consulta-funcionarios/consulta-funcionarios.component';
 import { EdicaoFuncionariosComponent } from './components/pages/edicao-funcionarios/edicao-funcionarios.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CadastroFornecedoresComponent } from './components/pages/cadastro-fornecedores/cadastro-fornecedores.component';
+import { ConsultaFornecedoresComponent } from './components/pages/consulta-fornecedores/consulta-fornecedores.component';
+import { EdicaoFornecedoresComponent } from './components/pages/edicao-fornecedores/edicao-fornecedores.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EdicaoAlunosComponent,
     CadastroFuncionarioComponent,
     ConsultaFuncionariosComponent,
-    EdicaoFuncionariosComponent
+    EdicaoFuncionariosComponent,
+    CadastroFornecedoresComponent,
+    ConsultaFornecedoresComponent,
+    EdicaoFornecedoresComponent
   ],
   imports: [
     BrowserModule,

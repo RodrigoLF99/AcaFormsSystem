@@ -1,1 +1,35 @@
-<p>consulta-funcionarios works!</p>
+<h3>Consuta Funcionários</h3>
+<p>Listagem de funcionários cadastrado</p>
+<hr>
+
+<div class="table-responsive">
+  <table class="table table-sm table-hover table-striped">
+    <thead>
+      <tr>
+        <th [width]="200"> Nome do funcionário</th>
+        <th>Idade</th>
+        <th [width]="300">Cargo</th>
+        <th [width]="140">Operações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rodrigo Fortes</td>
+        <td>27 Anos</td>
+        <td>
+          <small>Operário</small>
+        </td>
+        <td>
+          <button class="btn btn-sm btn-outline-primary me-2">Editar</button>
+          <button class="btn btn-sm btn-outline-danger ">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="8">Quantidade de funcionários: 1 </td>
+      </tr>
+    </tfoot>
+
+  </table>
+</div>

@@ -1,3 +1,4 @@
+import { CadastroFornecedoresComponent } from './components/pages/cadastro-fornecedores/cadastro-fornecedores.component';
 import { EdicaoFuncionariosComponent } from './components/pages/edicao-funcionarios/edicao-funcionarios.component';
 import { ConsultaFuncionariosComponent } from './components/pages/consulta-funcionarios/consulta-funcionarios.component';
 import { CadastroFuncionarioComponent } from './components/pages/cadastro-funcionarios/cadastro-funcionario.component';
@@ -6,6 +7,7 @@ import { CadastroAlunosComponent } from "./components/pages/cadastro-alunos/cada
 import { ConsultaAlunosComponent } from "./components/pages/consulta-alunos/consulta-alunos.component";
 import { EdicaoAlunosComponent } from "./components/pages/edicao-alunos/edicao-alunos.component";
 import { NgModule } from "@angular/core";
+import { ConsultaFornecedoresComponent } from './components/pages/consulta-fornecedores/consulta-fornecedores.component';
 
 // mapeamento das rotas do projeto
 const routes: Routes = [
@@ -15,7 +17,9 @@ const routes: Routes = [
 { path: '', pathMatch: 'full', redirectTo:'pages/consulta-alunos' },
 { path: 'pages/cadastro-funcionarios', component: CadastroFuncionarioComponent },
 { path: 'pages/consulta-funcionarios', component: ConsultaFuncionariosComponent },
-{ path: 'pages/edicao-funcionarios', component: EdicaoFuncionariosComponent }
+{ path: 'pages/edicao-funcionarios', component: EdicaoFuncionariosComponent },
+{ path: 'pages/cadastro-fornecedores', component: CadastroFornecedoresComponent },
+{ path: 'pages/consulta-fornecedores', component: ConsultaFornecedoresComponent },
 ];
 
 
