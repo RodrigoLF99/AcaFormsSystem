@@ -1,4 +1,4 @@
-<h3>Consuta Alunos</h3>
+<h3>Consulta Alunos</h3>
 <p>Listagem de alunos cadastrado</p>
 <hr>
 
@@ -8,7 +8,9 @@
       <tr>
         <th [width]="200"> Nome do aluno</th>
         <th>Idade</th>
-        <th [width]="300">Observações</th>
+        <th [width]="300">Matricula</th>
+        <th [width]="300">Peso</th>
+        <th [width]="300">Altura/th>
         <th [width]="140">Operações</th>
       </tr>
     </thead>
@@ -16,9 +18,9 @@
       <tr *ngFor="let aluno of alunos">
         <td> {{ aluno.nome }}</td>
         <td>{{ aluno.idade}}</td>
-        <td>
-          <small> {{ aluno.observacoes }}</small>
-        </td>
+        <td>{{ aluno.matricula}}</td>
+        <td>{{ aluno.peso}}</td>
+        <td>{{ aluno.altura}}</td>
         <td>
           <button class="btn btn-sm btn-outline-primary me-2">Editar</button>
           <button class="btn btn-sm btn-outline-danger ">Excluir</button>

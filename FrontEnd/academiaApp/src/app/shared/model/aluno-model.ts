@@ -1,6 +1,8 @@
 export class Aluno {
 nome: string = '';
 idade: number = 0;
-observacoes: string = ''
+matricula: number = 0;
+peso: string = '';
+altura: string = '';
 }
 

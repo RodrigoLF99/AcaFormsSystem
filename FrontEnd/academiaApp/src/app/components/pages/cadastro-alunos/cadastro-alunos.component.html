@@ -16,21 +16,21 @@
 
 
       <div class="col-md-2">
-        <label>CPF:</label>
-        <input type="text" class="form-control" placeholder="Digite o cpf aqui." formControlName="cpf">
+        <label>Matricula:</label>
+        <input type="text" class="form-control" placeholder="Digite o matricula aqui." formControlName="matricula">
       </div>
 
 
-      <div class="col-md-4">
-        <label>E-mail:</label>
-        <input type="text" class="form-control" placeholder="Digite o e-mail aqui." formControlName="email">
+      <div class="col-md-2">
+        <label>Peso:</label>
+        <input type="text" class="form-control" placeholder="Digite o peso aqui." formControlName="peso">
       </div>
 
 
-      <div class="row mb-2">
+      <div class="row mb-4">
         <div class="col-md-12">
-          <label>Observações:</label>
-          <textarea class="form-control" placeholder="Digite as Observações aqui." formControlName="observacoes"></textarea>
+          <label>Altura:</label>
+          <input type="text" class="form-control" placeholder="Digite o altura aqui." formControlName="altura">
         </div>
       </div>
 
@@ -45,14 +45,6 @@
 </form>
 
 
-<div *ngIf="dadosDoAluno" >
-  <h3>Dados do aluno cadastrado</h3>
-  <p><strong>Nome:</strong> {{ dadosDoAluno.nome }} </p>
-  <p><strong>Idade:</strong> {{ dadosDoAluno.idade }} </p>
-  <p><strong>CPF:</strong> {{ dadosDoAluno.cpf }} </p>
-  <p><strong>E-mail:</strong> {{ dadosDoAluno.email }} </p>
-  <p><strong>Observações</strong>: {{ dadosDoAluno.observacoes }} </p>
-</div>
 
 
 
